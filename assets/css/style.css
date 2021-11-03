@@ -280,9 +280,7 @@ margin:auto;
     color:#000;
     background-color: #ccc;
 }
-#footer{
 
-}
 
 .modal.open{
     display: flex;
@@ -352,7 +350,7 @@ margin:auto;
     margin-bottom:24px;
 }
 
-.modal #buy-ticket{
+.modal .buy-ticket{
     color:#fff;
     background-color: #009688;
     width:100%;
@@ -362,7 +360,7 @@ margin:auto;
     cursor:pointer;
 }
 
-.modal #buy-ticket:hover{
+.modal .buy-ticket:hover{
     opacity:0.9;
 }
 
