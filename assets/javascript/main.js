@@ -2,6 +2,7 @@ const buyBtns= document.querySelectorAll('.js-buy-ticket')
 const modal = document.querySelector('.js-modal')
 const modalClose= document.querySelector('.js-modal-close')
 const modalContainer=document.querySelector('.js-modal-container')
+const modalPay=document.querySelector('.js-modal-pay')
 
 //Hàm hiển thị modal mua vé (thêm class open vào modal)
 function showBuyTicket()
@@ -27,3 +28,5 @@ modalContainer.addEventListener('click',function(event)
 {
     event.stopPropagation()
 })
+
+modalPay.addEventListener('click',closeBuyTicket)
