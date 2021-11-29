@@ -6,11 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The band</title>
     <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.6.1/font/bootstrap-icons.css">
 </head>
 <body>
     <div id="wrapper">
-        <div id="header">
+        <div id="header" class="header-menu-mobile">
             <ul id="nav">
                 <li><a href="#">Home</a></li>
                 <li><a href="#band">Band</a></li>
@@ -30,6 +32,9 @@
 
             <div class="search-btn">
                 <i class="bi bi-search"></i>
+            </div>
+            <div id="mobile-menu-btn">
+                <i class="bi bi-justify"></i>
             </div>
         </div>
 
@@ -76,34 +81,34 @@
                         <li>November <span class="quanlity">3</span></li>
                     </ul>
                     <div class="row places-list">
-                        <div class="col place-item">
+                        <div class="col s-col-full place-item">
                             <img src="/assets/img/3.jpg" alt="" class="place-img">
                             <div class="place-body">
                                 <h3 class="place-heading">New York</h3>
                                 <p class="place-time">Fri 27 Nov 2016</p>
                                 <p class="place-desc">Praesent tincidunt sed tellus ut rutrum sed vitae justo</p>
-                                <button class="btn js-buy-ticket">Buy Tickets</button>
+                                <button class="btn s-full-width js-buy-ticket">Buy Tickets</button>
                             </div>
                         </div>
-                        <div class="col place-item">
+                        <div class="col s-col-full place-item">
                             <img src="/assets/img/3.jpg" alt="" class="place-img">
                             <div class="place-body">
                                 <h3 class="place-heading">New York</h3>
                                 <p class="place-time">Fri 27 Nov 2016</p>
                                 <p class="place-desc">Praesent tincidunt sed tellus ut rutrum sed vitae justo</p>
-                                <button class="btn js-buy-ticket">Buy Tickets</button>
+                                <button class="btn s-full-width js-buy-ticket">Buy Tickets</button>
                             </div>
                         </div>
-                        <div class="col place-item">
+                        <div class="col s-col-full place-item">
                             <img src="/assets/img/3.jpg" alt="" class="place-img">
                             <div class="place-body">
                                 <h3 class="place-heading">New York</h3>
                                 <p class="place-time">Fri 27 Nov 2016</p>
                                 <p class="place-desc">Praesent tincidunt sed tellus ut rutrum sed vitae justo</p>
-                                <button class="btn js-buy-ticket">Buy Tickets</button>
+                                <button class="btn s-full-width js-buy-ticket">Buy Tickets</button>
                             </div>
                         </div>
-                        <div class="clears"></div>
+                        <div class="clear"></div>
                     </div>
                 </div>
             </div>
@@ -111,19 +116,19 @@
                 <h2 class="section-heading">CONTACT</h2>
                 <p class="section-sub-heading">Fan?Drop a note</p>
                 <div class="row contact-content">
-                    <div class="col col-2 contact-infor">
+                    <div class="col col-2 s-col-full contact-infor">
                         <p><i class="bi bi-geo-alt-fill"></i>Chicago, US</p>
-                        <p><i class="bi bi-telephone-fill"></i>Phone: +00 151515</p>
-                        <p><i class="bi bi-envelope-fill"></i>Email: mail@mail.com</p>
+                        <p><i class="bi bi-telephone-fill"></i>Phone: <a href="tel:+00 151515">+00 151515</a></p>
+                        <p><i class="bi bi-envelope-fill"></i>Email: <a href="mailto:mail@mail.com">mail@mail.com</a></p>
                     </div>
-                    <div class="col col-2 contact-form">
+                    <div class="col col-2 s-col-full contact-form">
                         <form action="">
                             <div class="row">
-                                <div class="col col-2">
-                                    <input type="text" name="" placeholder="Name" required id="" class="form-control">
+                                <div class="col col-2 s-col-full">
+                                    <input type="text" name="" placeholder="Name" required id="form-name" class="form-control">
                                 </div>
-                                <div class="col col-2">
-                                    <input type="email" name="" placeholder="Email" required id="" class="form-control">
+                                <div class="col col-2 s-col-full">
+                                    <input type="email" name="" placeholder="Email" required id="form-email" class="form-control">
                                 </div>
                             </div>
                             <div class="row">
@@ -131,7 +136,7 @@
                                     <input type="text" name="" placeholder="Message" required id="" class="form-control">
                                 </div>
                             </div>
-                            <input class="btn submit-contact" type="submit" value="SEND"> 
+                            <input class="btn submit-contact s-full-width " type="submit" value="SEND"> 
                         </form>
                     </div>           
                 </div>

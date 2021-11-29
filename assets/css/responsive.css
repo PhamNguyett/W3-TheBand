@@ -1,0 +1,161 @@
+/*TABLET & MOBILE*/
+@media (min-width:0px) and (max-width:1023px)
+{
+    .btn{
+        padding:15px 16px;
+    }
+
+    .form-control{
+        padding:15px;
+    }
+
+    #footer .social-list a{
+        font-size:48px;
+    }
+    
+    #footer .social-list a {
+         margin: 0 8px;
+    }
+    
+    #footer .coppyright{
+        padding:9px 0;
+    }
+    
+    #nav .subnav li a{
+        padding:5 40px;
+    }
+}
+
+
+/*TABLET*/
+@media (min-width:740px) and (max-width:1023px)
+{
+    #content .about-text{
+        margin-right:8px;
+    }
+
+   .member-list{
+       margin-right: 8px;
+   }
+
+   #tour{
+       width:100%;
+   }
+
+   #slider{
+       padding-right:1px ;
+   }
+   #content .section-content{
+       padding-left:8px;
+   }
+
+   .row-places-list .place-item{
+        width:30%;
+        padding:0;
+
+   }
+
+ 
+}
+
+/*MOBILE*/
+@media (max-width: 740px){
+
+    
+    .s-col-full,
+    .s-full-width{
+        width:100%;
+    }
+
+    #nav > li{
+        display: block;
+        background-color: #000;
+    }
+
+    #nav > li>a {
+        width:100%;
+        margin-bottom:0px;
+    }
+
+    #nav >li >a :hover,
+    #nav .subnav li:hover a {
+        color:#000;
+        background-color: #ccc;
+    }
+
+    #nav .subnav{
+        position:initial;
+        background-color: #333;
+    }
+
+
+    #nav >li:first-child{
+        display: inline-block;
+    }
+    
+    #header .search-btn{
+        display:none;
+    }
+
+    #header {
+        overflow: hidden;
+    }
+    .search-btn{
+        display: none;
+    }
+
+    #mobile-menu-btn{
+        display: block;
+        position: absolute;
+        top:0;
+        right:0;
+    }
+
+     #nav{
+        display:block;
+    } 
+
+    #slider .text-content{
+        font-size:15px;
+        bottom:5px;
+    }
+
+    #nav{
+        background-color: #000;
+    }
+
+    #mobile-menu-btn:hover{
+        background-color: #ccc;
+    }
+
+    .tickets-list{
+        margin-left:8px;
+    }
+
+    #content .member-item{
+        width:100%;
+    }
+    
+    .contact-form{
+        margin-left:8px;
+    }
+
+    .tickets-list{
+        margin:5px;
+    }
+    #content .place-item{
+        margin-top:16px;
+        margin-bottom:16px;
+        margin-left:3px;
+    }
+
+    .tour-section{
+        height:1890px;
+    }
+
+    #nav .subnav li a{
+        color:#fff;
+    }
+
+  
+}

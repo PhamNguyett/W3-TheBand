@@ -30,3 +30,38 @@ modalContainer.addEventListener('click',function(event)
 })
 
 modalPay.addEventListener('click',closeBuyTicket)
+
+// Dong/mo mobile menu
+var header=document.getElementById('header');
+var mobileMenu=document.getElementById('mobile-menu-btn');
+var heightHeader= header.clientHeight
+mobileMenu.onclick=function(){
+    var isClosed= header.clientHeight===heightHeader;
+    if(isClosed)
+    {
+        header.style.height='auto';
+    }
+    else{
+        header.style.height=null;
+    }
+}
+
+//Tu dong dong khi chon menu
+
+menuItems=document.querySelectorAll('#nav li a[href*="#"]');
+for (var i =0 ; i<menuItems.length; i++)
+{
+    var menuItem=menuItems[i];
+    
+    menuItem.onclick=function(event){
+        var isParentMenu=this.nextElementSibling && this.nextElementSibling.classlist.contains('subnav')
+        if(!isParentMenu){
+            header.style.height=null;
+        }
+        else{
+            event.preventDefault();
+        }
+
+    }
+}
+
