@@ -46,19 +46,23 @@ html{
 #nav {
     display: inline-block;
 }
+
+
+
 #header{
-    height:46px;
+
     background-color: #000;
     position:fixed;
     top:0;
+    height: 46px;
     left:8px;
     right:8px;
     z-index: 1;
+
 }
 
 #nav{
 display: inline-block;
-height:46px;
 margin:auto;
 }
 
@@ -126,6 +130,15 @@ margin:auto;
     background-color: #f44336;
     cursor: pointer;
 }
+
+#mobile-menu-btn{
+    display: none;
+    color:#fff;
+    font-size:25px;
+    padding:11px;
+
+}
+
 #slider{
     position: relative;
     width:100%;
@@ -151,6 +164,7 @@ margin:auto;
 #content .section-content
 {
     width:800px;
+    max-width: 100%;
     padding: 64px 0;
     margin-left: auto;
     margin-right: auto;
@@ -203,6 +217,7 @@ margin:auto;
     margin-top:40px;
     list-style-type: none;
     margin-bottom:25px;
+    margin-right:8px;
 }
 
 .tickets-list li{
@@ -231,17 +246,14 @@ margin:auto;
     margin-top:-3px;
 }
 
-.place-item{
-    width:calc(94%/3);
-    background-color: #fff;
 
-
-}
 
 .place-item{
-    margin-left :8px;
-    margin-right: 8px;
+    width:calc(100%/3);
+    padding-left:10px;
 }
+
+
 .place-img{
     width:100%;
     display: block;
@@ -255,6 +267,7 @@ margin:auto;
 .place-body{
     padding:16px;
     font-size: 15px;
+    background-color: #fff;
 }
 .place-heading{
     font-size: 15px;
@@ -376,8 +389,12 @@ margin:auto;
 
 .contact-content{
     margin-top:48px;
+    padding-left:16px;
 }
 
+#form-email{
+    padding-left:8px;
+}
 .contact-infor{
     font-size: 18px;
 }
@@ -385,6 +402,15 @@ margin:auto;
 .contact-infor i{
     width:30px;
     display: inline-block;
+}
+
+.contact-infor a{
+   color:#101aef;
+   opacity:0.8;
+}
+
+.contact-infor a:hover{
+    opacity:1;
 }
 
 .contact-form{
@@ -447,3 +473,6 @@ margin:auto;
     color:rgba(0,0,0,0.6);
 }
 
+.open-menu-mobile{
+    overflow: none;
+}
